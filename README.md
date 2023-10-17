@@ -1,2 +1,2 @@
 # Gildas-MainPage
-this project is my profile, interest, and my apllication
+this project is my profile, interest, and my applications
