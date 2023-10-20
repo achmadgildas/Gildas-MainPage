@@ -11,43 +11,46 @@ body {
 }
 
 .menulist{
-    color: white;
-    background-color:green;
+    color:white;
+    background-color: #141E46;
     display: flex;
     flex-direction: row;
     margin-bottom: 0;
-    padding-bottom:0;
-    justify-content: space-evenly;
-    gap: 1px;
+    justify-content: center;
+    gap: 0.5rem;
     list-style-type: none;
-    
+    padding: 1rem 2rem;
 }
 
 nav a, div a {
     color: white;
+    padding: 1rem 2rem;
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
 }
 
-.gildas {color: #D80032;
+.gildas {color:black;
 font-weight: bolder;
 text-shadow: #3D0C11 ;
-background-color: white;
-padding: 0 10px 0;}
+background-color: #FD8D14;
+padding: 1rem 2rem;}
 
-a:hover{color: red;}
-.gildas:hover{color: yellow; background-color: red;}
-
+.menulist a:hover{color: red; background-color: #0802A3;}
+.gildas a:hover{color: yellow; background-color: red;}
+div a:hover{color: yellow;}
 main{
-    display: flex;
-    flex-wrap: wrap;
+    display: inline-flex;
+    flex-wrap: nowrap;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 2rem;
 }
 
-article{width: 70%; background-color: aqua;}
-aside{width: 25%; background-color: green;}
+article{width: 70%; height: auto; background-color: #219C90; font-size: 1.2rem; border-radius: 1.5rem; padding: 1.2rem 1rem;}
+article h5,h6{ font-size: 1.2rem;}
+h5{background-color: #D80032; color: white; padding: 0.5rem 0.5rem;}
+aside{width: 25%; height: auto; background-color: #219C90; border-radius: 1.5rem;}
 p{text-align: justify;}
 
 footer{
@@ -58,7 +61,10 @@ footer{
     align-items: center;
     flex-direction: column-reverse;
     padding: 2rem;
+    gap: 1rem;
 }
+
+.containerlink a{ display: flex; padding:1rem 2rem;}
 
 .profilecon{
     display: flex;
@@ -68,6 +74,21 @@ footer{
    padding: 5rem 0rem 5rem;
    gap: 0rem;
 }
+
+.skills li{background-color: #F78CA2;  
+    color: black;
+padding: 0.5rem 1rem; display: inline-flex; border-radius: 1rem;
+margin: 0.2rem;}
+
+.skills div{display: inline-flex;
+flex-direction: column;
+flex-wrap: wrap;} 
+
+.skills h3{
+    color: white; background-color:#3D0C11 ; text-align: center; padding: 2rem 2rem; font-size: 2rem;
+}
+
+.skills h6{ padding:1rem 2rem; white; background-color: #D80032; font-size: 1.25rem; text-align: center; border-style: dashed; border-width: 0.25rem;}
 
 .profile{width: 15rem; border-style: double; border-radius: 10rem;}
 @media screen and (max-width: 1200px) {
