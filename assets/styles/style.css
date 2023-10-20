@@ -2,6 +2,7 @@ body {
     font-family: 'Quicksand', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #F9DEC9;
 }
 .menubar{
     color: white;
@@ -16,12 +17,13 @@ body {
     flex-direction: row;
     margin-bottom: 0;
     padding-bottom:0;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    gap: 1px;
     list-style-type: none;
     
 }
 
-nav a{
+nav a, div a {
     color: white;
     text-decoration: none;
     font-size: 18px;
@@ -35,5 +37,45 @@ background-color: white;
 padding: 0 10px 0;}
 
 a:hover{color: red;}
-
 .gildas:hover{color: yellow; background-color: red;}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+article{width: 70%; background-color: aqua;}
+aside{width: 25%; background-color: green;}
+p{text-align: justify;}
+
+footer{
+    background-color: #3D0C11;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    padding: 2rem;
+}
+
+.profilecon{
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding: 5rem 0rem 5rem;
+   gap: 0rem;
+}
+
+.profile{width: 15rem; border-style: double; border-radius: 10rem;}
+@media screen and (max-width: 1200px) {
+    main{flex-flow:column nowrap}
+    main aside {align-self: center;}
+  }
+  
+  @media screen and (max-width: 768px) {
+   nav-ul{justify-content: center;}
+   main aside {align-self: stretch;}
+  }
