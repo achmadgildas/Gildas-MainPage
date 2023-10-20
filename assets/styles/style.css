@@ -1,0 +1,39 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.menubar{
+    color: white;
+    background-color: #3D0C11;
+    padding: 100px 50px 0px;;
+}
+
+.menulist{
+    color: white;
+    background-color:green;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0;
+    padding-bottom:0;
+    justify-content: space-between;
+    list-style-type: none;
+    
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.gildas {color: #D80032;
+font-weight: bolder;
+text-shadow: #3D0C11 ;
+background-color: white;
+padding: 0 10px 0;}
+
+a:hover{color: red;}
+
+.gildas:hover{color: yellow; background-color: red;}
